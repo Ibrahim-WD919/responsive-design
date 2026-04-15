@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .animate-marquee {
+        animation: marquee 15s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <header class="w-full bg-white">
+        <div class="mx-auto max-w-7xl p-5">
+          <nav class="flex items-center justify-between h-15">
+            <!-- LEFT -->
+            <div class="flex items-center gap-10">
+              <!-- Logo -->
+              <div class="logo">
+                <a
+                  href="#"
+                  class="text-2xl font-semibold flex items-center gap-3"
+                >
+                  M45
+                  <span class="text-gray-500 font-medium"> Agency </span>
+                </a>
+              </div>
+
+              <!-- Nav Links -->
+              <div
+                id="nav-menu"
+                class="hidden shadow-md lg:shadow-none lg:block absolute z-2 lg:static bg-white lg:bg-none top-20 left-0 min-h-[50vh] lg:min-h-fit w-full flex items-center p-5"
+              >
+                <ul
+                  class="flex lg:flex-row flex-col items-start lg:items-center gap-7 lg:gap-6"
+                >
+                  <li>
+                    <a
+                      class="text-sm font-medium text-gray-800 px-3 py-2 rounded-full bg-gray-100 transition"
+                      href="#"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm font-medium text-gray-800 px-3 py-2 rounded-full hover:bg-gray-100 transition"
+                      href="#"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm font-medium text-gray-800 px-3 py-2 rounded-full hover:bg-gray-100 transition"
+                      href="#"
+                      >Project</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm font-medium text-gray-800 px-3 py-2 rounded-full hover:bg-gray-100 transition"
+                      href="#"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm font-medium text-gray-800 px-3 py-2 rounded-full hover:bg-gray-100 transition"
+                      href="#"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <button
+                      class="lg:hidden bg-white rounded-full px-4 py-2 text-black border-2 border-b-5 transition hover:border-b-2 text-sm font-medium"
+                    >
+                      Buy Template
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button
+              onclick="toggleMenu()"
+              class="lg:hidden rounded-md font-bold text-3xl px-2 py-1"
+            >
+              <i id="menu-icon" class="ri-menu-line"></i>
+            </button>
+
+            <button
+              class="hidden lg:block bg-white rounded-full px-4 py-2 text-black border-2 border-b-5 transition hover:border-b-2 text-sm font-medium"
+            >
+              Buy Template
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <section>
+        <div class="hero bg-white rounded w-full p-5">
+          <div
+            class="p-10 h-fit lg:h-150 bg-gray-100 rounded-[40px] mx-auto max-w-360 flex justify-center items-center text-left lg:text-center"
+          >
+            <div class="">
+              <h1
+                data-aos="fade-right"
+                class="text-5xl sm:text-5xl md:text-6xl/18 lg:text-7xl/23 font-semibold uppercase"
+              >
+                Innovate, Create
+
+                <span class="hidden lg:inline-flex align-middle ml-4">
+                  <button
+                    class="flex items-center gap-20 bg-white border-2 border-b-5 border-black rounded-full pl-5 pr-3 py-2 text-base font-medium"
+                  >
+                    <span>Scroll for features</span>
+                    <span
+                      class="w-13 h-13 flex items-center justify-center bg-black text-white rounded-full"
+                    >
+                      <i class="animate-bounce ri-arrow-down-long-line"></i>
+                    </span>
+                  </button>
+                </span>
+                <br />
+
+                Inspire, Raise Your Brand
+                <br />
+                <span class="hidden lg:inline-flex align-middle ml-4">
+                  <button
+                    class="flex items-center gap-20 bg-white border-2 border-b-5 border-black rounded-full p-3 w-35 py-2 text-base font-medium"
+                  >
+                    <span
+                      class="w-13 h-13 flex items-center justify-center bg-white border-2 border-black rounded-full"
+                    >
+                      <span
+                        class="w-6 h-6 flex items-center justify-center bg-white border-2 border-black rounded-full"
+                      >
+                      </span>
+                    </span>
+                  </button>
+                </span>
+
+                Journey M54 AGENCY
+              </h1>
+
+              <div
+                class="mx-auto max-w-5xl mt-15 flex flex-col md:flex-row items-start md:items-center gap-5"
+              >
+                <!-- BUTTON LEFT -->
+                <button
+                  class="shrink-0 whitespace-nowrap bg-yellow-100 border-2 border-b-5 transition hover:border-b-2 border-black rounded-full w-full md:w-fit px-5 py-3 text-sm font-semibold uppercase"
+                >
+                  Contact us
+                </button>
+
+                <!-- PARAGRAPH -->
+                <p
+                  class="text-lg font-medium text-start md:text-center max-w-xl text-gray-700"
+                >
+                  You need a powerful influencer marketing consultant by your
+                  side when planning and elevating your influencer marketing
+                  future.
+                </p>
+
+                <!-- BUTTON RIGHT -->
+                <button
+                  class="shrink-0 whitespace-nowrap bg-yellow-200 border-2 border-black rounded-full px-5 py-2 text-sm font-semibold uppercase"
+                >
+                  Contact us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="hero bg-white rounded w-full overflow-hidden">
+          <div
+            class="p-7 bg-black rounded-full mx-auto max-w-360 flex justify-center items-center text-left lg:text-center"
+          >
+            <div
+              class="flex justify-between gap-10 whitespace-nowrap animate-marquee"
+            >
+              <p class="text-white text-3xl font-semibold uppercase">
+                Model management
+              </p>
+              <p class="text-white text-3xl font-semibold uppercase">
+                Model management
+              </p>
+              <p class="text-white text-3xl font-semibold uppercase">
+                Model management
+              </p>
+              <p class="text-white text-3xl font-semibold uppercase">
+                Model management
+              </p>
+              <p class="text-white text-3xl font-semibold uppercase">
+                Model management
+              </p>
+              <p class="text-white text-3xl font-semibold uppercase">
+                Model management
+              </p>
+              <p class="text-white text-3xl font-semibold uppercase">
+                Model management
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      const menu = document.getElementById("nav-menu");
+      const icon = document.getElementById("menu-icon");
+
+      function toggleMenu() {
+        menu.classList.toggle("hidden");
+
+        icon.className = menu.classList.contains("hidden")
+          ? "ri-menu-line"
+          : "ri-menu-4-line";
+      }
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 1024) {
+          menu.classList.add("hidden");
+          icon.className = "ri-menu-line";
+        }
+      });
+    </script>
+  </body>
+</html>
