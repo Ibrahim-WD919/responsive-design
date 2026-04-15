@@ -13,6 +13,13 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <style>
@@ -27,6 +34,10 @@
 
       .animate-marquee {
         animation: marquee 15s linear infinite;
+      }
+
+      body {
+        font-family: "Jost", sans-serif;
       }
     </style>
   </head>
@@ -140,7 +151,9 @@
                     <span
                       class="w-13 h-13 flex items-center justify-center bg-black text-white rounded-full"
                     >
-                      <i class="animate-bounce ri-arrow-down-long-line"></i>
+                      <i
+                        class="animate-bounce ri-arrow-down-long-line text-2xl"
+                      ></i>
                     </span>
                   </button>
                 </span>
@@ -156,8 +169,12 @@
                       class="w-13 h-13 flex items-center justify-center bg-white border-2 border-black rounded-full"
                     >
                       <span
-                        class="w-6 h-6 flex items-center justify-center bg-white border-2 border-black rounded-full"
+                        class="w-7 h-7 flex items-center justify-center bg-white border-2 border-black rounded-full"
                       >
+                        <span
+                          class="size-2 flex items-center justify-center bg-black border-2 border-black rounded-full animate-ping"
+                        >
+                        </span>
                       </span>
                     </span>
                   </button>
@@ -171,7 +188,7 @@
               >
                 <!-- BUTTON LEFT -->
                 <button
-                  class="shrink-0 whitespace-nowrap bg-yellow-100 border-2 border-b-5 transition hover:border-b-2 border-black rounded-full w-full md:w-fit px-5 py-3 text-sm font-semibold uppercase"
+                  class="shrink-0 whitespace-nowrap bg-orange-200 hover:bg-orange-300 border-2 border-b-5 transition duration-700 hover:border-b-2 border-black rounded-full w-full md:w-fit px-5 py-3 text-sm font-semibold uppercase"
                 >
                   Contact us
                 </button>
@@ -187,9 +204,9 @@
 
                 <!-- BUTTON RIGHT -->
                 <button
-                  class="shrink-0 whitespace-nowrap bg-yellow-200 border-2 border-black rounded-full px-5 py-2 text-sm font-semibold uppercase"
+                  class="shrink-0 whitespace-nowrap bg-white border-2 border-black rounded-full px-5 py-2 text-sm font-semibold uppercase"
                 >
-                  Contact us
+                  Try Now
                 </button>
               </div>
             </div>
@@ -198,7 +215,7 @@
       </section>
 
       <section>
-        <div class="hero bg-white rounded w-full overflow-hidden">
+        <div class="px-5 bg-white rounded w-full overflow-hidden">
           <div
             class="p-7 bg-black rounded-full mx-auto max-w-360 flex justify-center items-center text-left lg:text-center"
           >
@@ -230,6 +247,134 @@
           </div>
         </div>
       </section>
+
+      <section>
+        <div class="hero bg-white rounded w-full p-5">
+          <div
+            class="p-7 md:p-10 lg:p-20 h-fit bg-orange-200 rounded-[40px] mx-auto max-w-360 text-left"
+          >
+            <div class="">
+              <h1
+                data-aos="fade-right"
+                class="text-3xl md:text-4xl/12 lg:text-5xl/15 font-semibold uppercase mb-10 ps-1 md:ps-15 lg:ps-20"
+              >
+                More than 12,500 <br />
+                Teams use M54 Agency
+              </h1>
+
+              <div
+                class="boxes grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:mx-5"
+              >
+                <div
+                  class="box bg-white border border-b-4 border-black rounded-2xl px-1 py-8 text-sm font-semibold uppercase text-center"
+                >
+                  Branch
+                </div>
+                <div
+                  class="box bg-white border border-b-4 border-black rounded-2xl px-1 py-8 text-sm font-semibold uppercase text-center"
+                >
+                  Branch
+                </div>
+                <div
+                  class="box bg-white border border-b-4 border-black rounded-2xl px-1 py-8 text-sm font-semibold uppercase text-center"
+                >
+                  Branch
+                </div>
+                <div
+                  class="box bg-white border border-b-4 border-black rounded-2xl px-1 py-8 text-sm font-semibold uppercase text-center"
+                >
+                  Branch
+                </div>
+                <div
+                  class="box bg-white border border-b-4 border-black rounded-2xl px-1 py-8 text-sm font-semibold uppercase text-center"
+                >
+                  Branch
+                </div>
+                <div
+                  class="box bg-white border border-b-4 border-black rounded-2xl px-1 py-8 text-sm font-semibold uppercase text-center"
+                >
+                  Branch
+                </div>
+                <div
+                  class="box bg-white border border-b-4 border-black rounded-2xl px-1 py-8 text-sm font-semibold uppercase text-center"
+                >
+                  Branch
+                </div>
+                <div
+                  class="box bg-white border border-b-4 border-black rounded-2xl px-1 py-8 text-sm font-semibold uppercase text-center"
+                >
+                  Branch
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="hero bg-white rounded w-full p-5">
+          <div
+            class="px-7 py-12 sm:px-10 sm:py-18 md:px-30 md:py-20 lg:py-25 lg:px-40 h-fit border border-gray-200 rounded-[40px] mx-auto max-w-360 text-left"
+          >
+            <div class="">
+              <h1
+                data-aos="fade-right"
+                class="text-3xl md:text-4xl/12 lg:text-5xl/15 font-semibold uppercase mb-10"
+              >
+                We Create Content That <br />
+                Engages The Audience.
+              </h1>
+
+              <div class="overflow-hidden w-full">
+                <div
+                  id="slider"
+                  class="flex transition-transform duration-700 ease-in-out"
+                >
+                  <!-- Slide 1 -->
+                  <div class="min-w-full flex flex-col justify-center">
+                    <img
+                      class="w-full h-75 object-cover rounded-2xl"
+                      src="https://t3.ftcdn.net/jpg/04/68/76/32/360_F_468763206_L047kxxo2lbUa9sr2Ct5BtRgH4YyDiRP.jpg"
+                    />
+                    <h3 class="text-2xl font-medium mt-7 mb-3">
+                      See your Influencer marketing goals become a reality:
+                    </h3>
+                    <p class="text-lg text-gray-500">
+                      We are passionate about conducting creative and engaging
+                      Influencer Marketing Campaigns. We consult and manage
+                      content creators on YouTube and Twitch.Working with one of
+                      the top influencer marketing agencies is different. Our
+                      most important resource is our multiple years of
+                      experience in Influencer Marketing.
+                    </p>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="min-w-full flex flex-col justify-center">
+                    <img
+                      class="w-full h-75 object-cover rounded-2xl"
+                      src="https://media.istockphoto.com/id/1363104989/photo/diverse-team-of-professional-businesspeople-meeting-in-the-office-conference-room-creative.jpg?s=612x612&w=0&k=20&c=TGdAKum3fkCmS0R57vk7tbZaGkQ_Lc9EC2uvOhTowIE="
+                    />
+                    <h3 class="text-2xl font-medium mt-7 mb-3">
+                      Rising Trends in Digital Marketing Strategies: Innovations
+                      Dominating 2024:
+                    </h3>
+                    <p class="text-lg text-gray-500">
+                      Explore the rapidly evolving trends in the world of
+                      digital marketing and discover the innovations taking
+                      center stage in 2024. From data analytics to artificial
+                      intelligence, interactive content to sustainable
+                      marketing, uncover crucial insights into the innovative
+                      strategies businesses are adopting to enhance their
+                      competitive advantage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -254,6 +399,34 @@
           menu.classList.add("hidden");
           icon.className = "ri-menu-line";
         }
+      });
+    </script>
+
+    <script>
+      let index = 0;
+      const slider = document.getElementById("slider");
+      const totalSlides = slider.children.length;
+
+      setInterval(() => {
+        index++;
+
+        if (index >= totalSlides) {
+          index = 0;
+        }
+
+        slider.style.transform = `translateX(-${index * 100}%)`;
+      }, 3000); // 3 sec
+
+      let interval = setInterval(nextSlide, 3000);
+
+      function nextSlide() {
+        index = (index + 1) % totalSlides;
+        slider.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      slider.addEventListener("mouseenter", () => clearInterval(interval));
+      slider.addEventListener("mouseleave", () => {
+        interval = setInterval(nextSlide, 3000);
       });
     </script>
   </body>
